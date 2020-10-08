@@ -6,7 +6,7 @@ const texto = document.querySelector("#texto");
 let recognition = new webkitSpeechRecognition();
 recognition.lang = 'es-ES';
 recognition.continuous = true;
-recognition.interimResults = true;
+recognition.interimResults = false;
 
 recognition.onresult = (event)=>{
     const results = event.results;
